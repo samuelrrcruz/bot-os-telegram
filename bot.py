@@ -3,7 +3,7 @@ import pandas as pd
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-TOKEN = os.getenv("8495988623:AAFFViwueVrUCuwFFAS6U0qbXUuU4u96yP0")  # Pega o token do ambiente
+TOKEN = os.getenv("TELEGRAM_TOKEN")  # Pega o token do ambiente
 DATA_PATH = "Power Bi.xlsx"
 df = pd.read_excel(DATA_PATH, sheet_name="Planilha1")
 
@@ -71,3 +71,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
